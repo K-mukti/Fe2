@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  h1 {
+    @apply font-poppins font-bold lg:text-[48px]/[52.8px] text-white 
+    hp:text-2xl/[26.4px] sm:text-4xl;
+  }
+
+  h3 {
+    @apply font-poppins font-bold lg:text-[32px]/[35.2px] text-slate-900
+    hp:text-2xl/[26.4px];
+  }
+
+  h4 {
+    @apply font-poppins font-semibold lg:text-2xl/[28.8px] hp:text-xl/[24px] text-primary;
+  }
+
+  h6 {
+    @apply font-poppins font-semibold text-lg/[21.6px] text-slate-900;
+  }
+
+  label {
+    @apply font-sans font-normal text-base/[22.4px] text-slate-600;
+  }
+
+  .form, 
+  input[type = "text"],
+  input[type = "email"],
+  input[type = "tel"],
+  input[type = "password"]
+
+  {
+    @apply px-[10px] py-1 w-full border rounded-md;
+  }
+
+  button{
+    @apply font-sans font-bold text-base/[22.4px] gap-4 border-0 rounded-[10px] cursor-pointer;
+  }
+}
+
+@layer components {
+
+  .input-form {
+    @apply lg:h-12;
+  }
+
+  .btn-login {
+    @apply bg-primary hover:bg-green-600 text-white h-[42px] w-full;
+  }
+
+  .btn-register {
+    @apply bg-secondary hover:bg-slate-300 text-primary h-[42px] w-full;
+  }
+  .btn-google {
+    @apply bg-white hover:bg-slate-200 text-slate-600 h-[42px] w-full;
+  }
+
+  .btn-banner {
+    @apply bg-primary hover:bg-green-600 text-white lg:h-[42px] lg:w-[369px] 
+    hp:h-[40px] hp:w-[300px];
+  }
+
+  .btn-cta {
+    @apply bg-yellow-500 text-white h-full w-full mx-auto rounded-[10px];
+  }
+
+  .text-input{
+    @apply font-sans font-normal lg:text-base/[22.4px] text-slate-600 hp:text-sm/[19.6px];
+  }
+
+
+  .text-banner {
+    @apply font-sans font-medium lg:text-base/[22.4px] text-white hp:text-sm/[19.6px] sm:text-base/[20px];
+  }
+
+  .text-home {
+    @apply font-sans font-medium lg:text-base/[22.4px] text-slate-500 hp:text-sm/[19.6px];
+  }
+
+  .text-author {
+    @apply font-sans font-medium text-sm/[19.6px] text-slate-900;
+  }
+
+  .text-job {
+    @apply font-sans font-normal lg:text-sm/[19.6px] hp:text-[12px]/[16.8px] text-slate-500;
+  }
+
+  .text-office {
+    @apply font-sans font-bold text-sm/[19.6px] text-slate-500
+  }
+
+  .text-hbanner {
+    @apply font-sans font-bold text-lg/[25.2px] text-slate-400;
+  }
+
+  .text-hfooter {
+    @apply font-sans font-bold lg:text-lg/[25.2px] hp:text-sm/[19.6px] text-slate-950 ;
+  }
+
+  .text-button {
+    @apply font-sans font-bold lg:text-base/[22.4px] hp:text-sm/[19.6px];
+  }
+  
+}
